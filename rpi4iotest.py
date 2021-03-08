@@ -8,6 +8,5 @@ root.geometry('400x200+700+400')
 
 # main loop
 
-
 root.mainloop()
 
