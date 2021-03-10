@@ -1,22 +1,11 @@
-from tkinter import *
+import tkinter as tk
+ 
+window_main = tk.Tk()
+window_main.geometry("400x200")
+ 
+frame_1 = tk.Frame(window_main, bg='blue', width=200, height=200)
+frame_1.pack(side='left')
+frame_1.pack_propagate(0)
+label = tk.Label(frame_1,text='hello', bg='blue',fg='yellow')
+label.place(x=0,y=0)
 
-root = Tk()
-frame = Frame(root, relief=RAISED)
-frame.pack()
-
-bottomframe = Frame(root, relief=SUNKEN)
-bottomframe.pack( side = BOTTOM )
-
-redbutton = Button(frame, text="Red", fg="red")
-redbutton.pack( side = LEFT)
-
-greenbutton = Button(frame, text="Brown", fg="brown")
-greenbutton.pack( side = LEFT )
-
-bluebutton = Button(frame, text="Blue", fg="blue")
-bluebutton.pack( side = LEFT )
-
-blackbutton = Button(bottomframe, text="Black", fg="black")
-blackbutton.pack( side = BOTTOM)
-
-root.mainloop()
